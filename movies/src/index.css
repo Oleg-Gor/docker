@@ -1,0 +1,17 @@
+.card-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card-header {
+  margin-bottom: 1px;
+}
+
+.card-style {
+  margin: 5px 5px !important;
+}
+
+.header-in-content {
+  font-weight: bold;
+}

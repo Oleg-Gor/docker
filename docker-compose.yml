@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  movies:
+    build: movies/
+    restart: always
+    ports:
+      - "4200:4200"
+    volumes:
+      - './movies/src/data:/home/mydata'
+  server:
+    build: server/
+    restart: always
+    ports:
+      - "4210:4210"
+    volumes:
+      - './server/data/:/home/newdata'

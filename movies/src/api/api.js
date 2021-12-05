@@ -1,5 +1,5 @@
 import axios from "axios";
-import { data } from "../../../server/data/newData";
+
 
 export const getMovies = async (title) => {
   const response = await axios.get(
@@ -9,6 +9,6 @@ export const getMovies = async (title) => {
 };
 
 export const getData = async () => {
-  const response = await axios.get(`http://localhost:4210/${data}`);
+  const response = await axios.get(`http://localhost:4210/data`);
   return response.data;
 };

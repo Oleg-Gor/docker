@@ -1,6 +1,7 @@
 //import { newData } from "./data/newData";
 
 const newData = require('./data/newData')
+const jsonData = require('./data/data')
 
 const http = require("http");
 const { runInNewContext } = require("vm");
@@ -30,8 +31,10 @@ const requestListener = (req, res) => {
       { name: "Oleg", surname: "Gorbulich" },
       { name: "Elena", age: 23 },
     ];
-    console.log("url", newData);
-    res.end(newData);
+
+    const thisData = JSON.stringify(jsonData);
+    
+    res.end(thisData);
   }
 };
 

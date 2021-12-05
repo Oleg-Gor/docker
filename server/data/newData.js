@@ -1,7 +1,7 @@
-const newData = JSON.stringify([
+const newData = [
     { name: "Oleg", surname: "Gorbulich" },
     { name: "Elena", age: 23 },
-    { "oleg": 23, "1": 25, "000": 15 }
-])
+    { "oleg": 23, "1": 25, "555": 15 }
+]
 
 module.exports = newData;

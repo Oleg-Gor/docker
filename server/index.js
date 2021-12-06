@@ -1,10 +1,10 @@
 //import { newData } from "./data/newData";
 
-const newData = require('./data/newData')
-const jsonData = require('./data/data')
+const newData = require('./newdata/newData')
+// const jsonData = require('./data/data')
 
 const http = require("http");
-const { runInNewContext } = require("vm");
+// const { runInNewContext } = require("vm");
 const PORT = 4210;
 const LOCALHOST = "http://localhost:4200/";
 
@@ -32,7 +32,7 @@ const requestListener = (req, res) => {
       { name: "Elena", age: 23 },
     ];
 
-    const thisData = JSON.stringify(jsonData);
+    const thisData = JSON.stringify(newData);
     
     res.end(thisData);
   }

@@ -8,4 +8,4 @@ ENV PORT 4210
 
 EXPOSE ${PORT}
 
-CMD node index.js
+CMD npm run start

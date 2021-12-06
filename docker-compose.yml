@@ -14,4 +14,4 @@ services:
     ports:
       - "4210:4210"
     volumes:
-      - './server/data/:/home/newdata'
+      - './server/data/:/app/newdata'

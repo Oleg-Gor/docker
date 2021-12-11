@@ -1,11 +1,10 @@
 //import { newData } from "./data/newData";
 
-const newData = require('./data/newData')
-const jsonData = require('./data/data')
-const txtData = require('./data/txtData.txt')
+const newData = require('./newdata/newData')
+// const jsonData = require('./data/data')
 
 const http = require("http");
-const { runInNewContext } = require("vm");
+// const { runInNewContext } = require("vm");
 const PORT = 4210;
 const LOCALHOST = "http://localhost:4200/";
 

@@ -2,6 +2,7 @@
 
 const newData = require('./data/newData')
 const jsonData = require('./data/data')
+const txtData = require('./data/txtData.txt')
 
 const http = require("http");
 const { runInNewContext } = require("vm");
@@ -32,7 +33,7 @@ const requestListener = (req, res) => {
       { name: "Elena", age: 23 },
     ];
 
-    const thisData = JSON.stringify(jsonData);
+    const thisData = JSON.stringify(newData);
     
     res.end(thisData);
   }
